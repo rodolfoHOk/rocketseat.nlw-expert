@@ -1,0 +1,17 @@
+### students verifyIfHasCertification
+POST http://localhost:8085/students/verifyIfHasCertification
+Content-Type: application/json
+
+{
+  "email": "rudolfhiok@email.com",
+  "technology": "JAVA"
+}
+
+### students verifyIfHasCertification 2
+POST http://localhost:8085/students/verifyIfHasCertification
+Content-Type: application/json
+
+{
+  "email": "rudolfhiok@email.com",
+  "technology": "REACTJS"
+}
