@@ -31,5 +31,3 @@
 - [Expo Get Started Installation](https://docs.expo.dev/get-started/installation/)
 
 - [Expo go](https://docs.expo.dev/get-started/expo-go/)
-
-40:56 -46:17
