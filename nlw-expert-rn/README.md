@@ -12,6 +12,8 @@
 
 - nativewind
 - -D tailwindcss@3.3.2
+- expo-font
+- @expo-google-fonts/inter
 
 ## React Native com Expo e Tailwind
 
@@ -19,6 +21,7 @@
 - pnpm add nativewind
 - pnpm add -D tailwindcss
 - npx tailwindcss init
+- npx expo install expo-font @expo-google-fonts/inter
 
 ## Links
 
