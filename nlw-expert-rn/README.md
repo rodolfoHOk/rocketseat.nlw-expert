@@ -11,9 +11,11 @@
 ### Bibliotecas adicionais
 
 - nativewind
-- -D tailwindcss@3.3.2
+- tailwindcss@3.3.2 (-D)
 - expo-font
 - @expo-google-fonts/inter
+- clsx
+- zustand
 
 ## React Native com Expo e Tailwind
 
@@ -34,3 +36,5 @@
 - [Expo Get Started Installation](https://docs.expo.dev/get-started/installation/)
 
 - [Expo go](https://docs.expo.dev/get-started/expo-go/)
+
+- [Zustand](https://zustand-demo.pmnd.rs/)
