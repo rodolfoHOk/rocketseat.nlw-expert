@@ -6,10 +6,19 @@
 
 - Typescript / Javascript
 - Expo / React Native
+- NativeWind / Tailwind CSS
 
-## React Native com Expo
+### Bibliotecas adicionais
+
+- nativewind
+- -D tailwindcss@3.3.2
+
+## React Native com Expo e Tailwind
 
 - npx create-expo-app --template
+- pnpm add nativewind
+- pnpm add -D tailwindcss
+- npx tailwindcss init
 
 ## Links
 
@@ -22,3 +31,5 @@
 - [Expo Get Started Installation](https://docs.expo.dev/get-started/installation/)
 
 - [Expo go](https://docs.expo.dev/get-started/expo-go/)
+
+40:56 -46:17
