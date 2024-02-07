@@ -1,2 +1,11 @@
 ## Test Hello NLW
 GET http://localhost:3333/hello
+
+
+### Create poll
+POST http://localhost:3333/polls
+Content-Type: application/json
+
+{
+  "title": "Teste título da enquete"
+}
