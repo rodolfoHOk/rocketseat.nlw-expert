@@ -7,6 +7,7 @@
 - Typescript / Javascript
 - React.js
 - Vite.js
+- Tailwind CSS
 
 ### Bibliotecas adicionais
 
@@ -19,3 +20,7 @@
 - [Figma Design](https://www.figma.com/community/file/1336456128647909148)
 
 - [Vite Js](https://vitejs.dev/)
+
+- [Tailwind CSS](https://tailwindcss.com/)
+
+- [Tailwind CSS installation guide](https://tailwindcss.com/docs/guides/vite#react)
