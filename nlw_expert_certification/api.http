@@ -7,11 +7,5 @@ Content-Type: application/json
   "technology": "JAVA"
 }
 
-### students verifyIfHasCertification 2
-POST http://localhost:8085/students/verifyIfHasCertification
-Content-Type: application/json
-
-{
-  "email": "rudolfhiok@email.com",
-  "technology": "REACTJS"
-}
+### questions listByTechnology
+GET http://localhost:8085/questions/technology/JAVA

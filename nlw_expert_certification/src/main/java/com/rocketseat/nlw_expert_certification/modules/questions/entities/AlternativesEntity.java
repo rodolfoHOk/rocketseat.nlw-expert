@@ -5,6 +5,8 @@ import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -41,6 +43,7 @@ public class AlternativesEntity {
 
   @ManyToOne
   @JoinColumn(name = "question_id", insertable = false, updatable = false)
+  @JsonIgnore
   private QuestionEntity question;
 
 }
