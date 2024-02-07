@@ -8,12 +8,14 @@
 - Node Js
 - Rest API
 - Web Sockets
+- Fastify
 
 ### Bibliotecas adicionais
 
 - typescript -D
 - @types/node -D
 - tsx -D
+- fastify
 
 ## Guia
 
