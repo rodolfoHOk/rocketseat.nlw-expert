@@ -17,7 +17,9 @@
 - tsx -D
 - fastify
 - prisma -D
+- @prisma/client
 - zod
+- @fastify/cookie
 
 ## Guia
 
