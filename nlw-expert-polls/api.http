@@ -7,5 +7,11 @@ POST http://localhost:3333/polls
 Content-Type: application/json
 
 {
-  "title": "Teste título da enquete"
+  "title": "Qual a melhor linguagem de programação?",
+  "options": [
+    "JavaScript",
+    "Java",
+    "PHP",
+    "C#"
+  ]
 }
