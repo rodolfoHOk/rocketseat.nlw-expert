@@ -1,4 +1,4 @@
-import { FastifyInstance, FastifyReply, FastifyRequest } from 'fastify';
+import { FastifyInstance } from 'fastify';
 import z from 'zod';
 import { prisma } from '../../lib/prisma';
 

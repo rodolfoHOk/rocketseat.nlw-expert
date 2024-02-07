@@ -1,5 +1,6 @@
 import fastify from 'fastify';
 import { createPool } from './routes/create-poll';
+import { getPool } from './routes/get-poll';
 
 const PORT = 3333;
 
@@ -10,6 +11,7 @@ app.get('/hello', () => {
 });
 
 app.register(createPool);
+app.register(getPool);
 
 app
   .listen({ port: PORT })
