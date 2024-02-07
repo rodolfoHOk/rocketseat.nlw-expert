@@ -14,6 +14,7 @@
 - @radix-ui/react-dialog
 - date-fns
 - lucide-react
+- sonner
 
 ## Links
 
