@@ -1,4 +1,4 @@
-package com.rocketseat.nlw_expert_certification.modules.students.entities;
+package com.rocketseat.nlw_expert_certification.modules.questions.entities;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -17,23 +17,26 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@AllArgsConstructor
 @NoArgsConstructor
-@Entity(name = "students")
-public class StudentEntity {
+@AllArgsConstructor
+@Entity(name = "questions")
+public class QuestionEntity {
 
   @Id
   @GeneratedValue(strategy = GenerationType.UUID)
   private UUID id;
 
-  @Column(unique = true, nullable = false)
-  private String email;
+  @Column(length = 50)
+  private String technology;
+
+  @Column
+  private String description;
 
   @CreationTimestamp
   @Column(name = "created_at")
   private LocalDateTime createdAt;
 
-  @OneToMany(mappedBy = "student")
-  private List<CertificationStudentEntity> certifications;
-  
+  @OneToMany(mappedBy = "questionId")
+  private List<AlternativesEntity> alternatives;
+
 }

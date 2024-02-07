@@ -12,7 +12,7 @@ import com.rocketseat.nlw_expert_certification.modules.students.entities.Certifi
 @Repository
 public interface CertificationStudentRepository extends JpaRepository<CertificationStudentEntity, UUID> {
 
-  @Query("SELECT c FROM certifications c INNER JOIN c.studentEntity std WHERE std.email = :email AND c.technology = :technology")
+  @Query("SELECT c FROM certifications c INNER JOIN c.student std WHERE std.email = :email AND c.technology = :technology")
   List<CertificationStudentEntity> findByStudentEmailAndTechnology(String email, String technology);
 
 }
