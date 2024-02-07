@@ -11,7 +11,9 @@
 
 ### Bibliotecas adicionais
 
--
+- @radix-ui/react-dialog
+- date-fns
+- lucide-react
 
 ## Links
 
@@ -24,3 +26,5 @@
 - [Tailwind CSS](https://tailwindcss.com/)
 
 - [Tailwind CSS installation guide](https://tailwindcss.com/docs/guides/vite#react)
+
+- [Radix UI](https://www.radix-ui.com/primitives)
