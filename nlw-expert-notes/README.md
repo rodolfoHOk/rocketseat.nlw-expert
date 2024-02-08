@@ -15,6 +15,7 @@
 - date-fns
 - lucide-react
 - sonner
+- @types/dom-speech-recognition -D
 
 ## Links
 
