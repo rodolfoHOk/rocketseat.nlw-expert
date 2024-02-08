@@ -27,3 +27,14 @@ Content-Type: application/json
 {
   "pollOptionId": "9cc2ec51-7445-49e0-896c-b098d26cdac8"
 }
+
+### Vote on pool
+POST http://localhost:3333/polls/f2d3ef9e-f613-4fab-814b-3ab2c4d71110/votes
+Content-Type: application/json
+
+{
+  "pollOptionId": "f8c1336f-5cb6-48db-b589-3860df0ca506"
+}
+
+### Pool results (obs: unsupported protocol ws - tested in Insomnia)
+GET ws://localhost:3333/polls/f2d3ef9e-f613-4fab-814b-3ab2c4d71110/results

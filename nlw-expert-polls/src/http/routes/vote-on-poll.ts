@@ -3,6 +3,7 @@ import z from 'zod';
 import { prisma } from '../../lib/prisma';
 import { randomUUID } from 'crypto';
 import { redis } from '../../lib/redis';
+import { votingPubSub } from '../../utils/voting-pub-sub';
 
 export async function voteOnPoll(app: FastifyInstance) {
   app.post('/polls/:pollId/votes', async (request, reply) => {
@@ -43,6 +44,11 @@ export async function voteOnPoll(app: FastifyInstance) {
           -1,
           userPreviousVoteOnPoll.pollOptionId
         );
+
+        votingPubSub.publish(pollId, {
+          pollOptionId: userPreviousVoteOnPoll.pollOptionId,
+          votes: Number(votes),
+        });
       }
     } else {
       sessionId = randomUUID();
@@ -63,6 +69,11 @@ export async function voteOnPoll(app: FastifyInstance) {
     });
 
     const votes = await redis.zincrby(pollId, 1, pollOptionId);
+
+    votingPubSub.publish(pollId, {
+      pollOptionId,
+      votes: Number(votes),
+    });
 
     return reply.status(201).send();
   });

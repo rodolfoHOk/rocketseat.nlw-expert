@@ -7,10 +7,10 @@
 - Typescript / Javascript
 - Node Js
 - Rest API
-- Web Sockets
 - Fastify
 - PostgreSQL
 - Redis
+- Web Sockets
 
 ### Bibliotecas adicionais
 
@@ -23,6 +23,7 @@
 - zod
 - @fastify/cookie
 - ioredis
+- @fastify/websocket
 
 ## Guia
 
@@ -41,3 +42,5 @@
 - [Prisma](https://www.prisma.io/)
 
 - [Redis commands](https://redis.io/commands/)
+
+- [fastify-websocket](https://github.com/fastify/fastify-websocket)

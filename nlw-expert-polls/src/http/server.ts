@@ -1,8 +1,10 @@
 import fastify from 'fastify';
 import cookie from '@fastify/cookie';
+import websocket from '@fastify/websocket';
 import { createPool } from './routes/create-poll';
 import { getPool } from './routes/get-poll';
 import { voteOnPoll } from './routes/vote-on-poll';
+import { pollResults } from './ws/poll-results';
 
 const PORT = 3333;
 
@@ -13,6 +15,8 @@ app.register(cookie, {
   hook: 'onRequest',
 });
 
+app.register(websocket);
+
 app.get('/hello', () => {
   return 'Hello NLW';
 });
@@ -20,6 +24,7 @@ app.get('/hello', () => {
 app.register(createPool);
 app.register(getPool);
 app.register(voteOnPoll);
+app.register(pollResults);
 
 app
   .listen({ port: PORT })
