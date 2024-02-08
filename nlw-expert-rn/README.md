@@ -16,6 +16,8 @@
 - @expo-google-fonts/inter
 - clsx
 - zustand
+- react-native-keyboard-aware-scroll-view
+- @react-native-async-storage/async-storage
 
 ## React Native com Expo e Tailwind
 
@@ -24,6 +26,7 @@
 - pnpm add -D tailwindcss
 - npx tailwindcss init
 - npx expo install expo-font @expo-google-fonts/inter
+- npx expo install @react-native-async-storage/async-storage
 
 ## Links
 
@@ -38,3 +41,5 @@
 - [Expo go](https://docs.expo.dev/get-started/expo-go/)
 
 - [Zustand](https://zustand-demo.pmnd.rs/)
+
+- [Expo AsyncStorage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
