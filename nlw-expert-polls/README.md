@@ -9,6 +9,8 @@
 - Rest API
 - Web Sockets
 - Fastify
+- PostgreSQL
+- Redis
 
 ### Bibliotecas adicionais
 
@@ -20,6 +22,7 @@
 - @prisma/client
 - zod
 - @fastify/cookie
+- ioredis
 
 ## Guia
 
@@ -36,3 +39,5 @@
 - [TypeScript Node Target Mapping](https://github.com/microsoft/TypeScript/wiki/Node-Target-Mapping)
 
 - [Prisma](https://www.prisma.io/)
+
+- [Redis commands](https://redis.io/commands/)
