@@ -3,9 +3,32 @@ POST http://localhost:8085/students/verifyIfHasCertification
 Content-Type: application/json
 
 {
-  "email": "rudolfhiok@email.com",
+  "email": "user1@email.com",
   "technology": "JAVA"
 }
 
 ### questions listByTechnology
 GET http://localhost:8085/questions/technology/JAVA
+
+### student certification answers
+POST http://localhost:8085/students/certification/answer
+Content-Type: application/json
+
+{
+  "email": "user1@email.com",
+  "technology": "JAVA",
+  "questionsAnswers": [
+    {
+      "questionID": "c5f02721-6dc3-4fa6-b46d-6f2e8dca9c66",
+      "alternativeID": "bafdf631-6edf-482a-bda9-7dce1efb1890"
+    },
+    {
+      "questionID": "b0ec9e6b-721c-43c7-9432-4d0b6eb15b01",
+      "alternativeID": "9da03a4e-3c8d-4a32-87e1-9898938435c2"
+    },
+    {
+      "questionID": "f85e9434-1711-4e02-9f9e-7831aa5c743a",
+      "alternativeID": "d3e51a56-9b97-4bb8-9827-8bcf89f4b276"
+    }
+  ]
+}
