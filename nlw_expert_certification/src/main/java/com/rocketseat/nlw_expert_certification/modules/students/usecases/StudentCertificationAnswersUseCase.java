@@ -42,16 +42,15 @@ public class StudentCertificationAnswersUseCase {
       throw new Exception("Você já tirou sua certificação!");
     }
     
-    var student = studentRepository.findByEmail(dto.email());
-    UUID studentID;
-    if (student.isEmpty()) {
-      var studentCreated = StudentEntity.builder()
+    var optionalStudent = studentRepository.findByEmail(dto.email());
+    StudentEntity student;
+    if (optionalStudent.isEmpty()) {
+      var newStudent = StudentEntity.builder()
         .email(dto.email())
         .build();
-      studentCreated = studentRepository.save(studentCreated);
-      studentID = studentCreated.getId();
+      student = studentRepository.save(newStudent);
     } else {
-      studentID = student.get().getId();
+      student = optionalStudent.get();
     }
 
     var questionsEntity = questionRepository.findByTechnology(dto.technology());
@@ -70,7 +69,7 @@ public class StudentCertificationAnswersUseCase {
         var answersCertificationsEntity = AnswersCertificationsEntity.builder()
           .answerId(questionAnswer.alternativeID())
           .questionId(questionAnswer.questionID())
-          .studentId(studentID)
+          .studentId(student.getId())
           .isCorrect(true)
           .build();
         correctAnswers.incrementAndGet();
@@ -79,7 +78,7 @@ public class StudentCertificationAnswersUseCase {
         var answersCertificationsEntity = AnswersCertificationsEntity.builder()
           .answerId(questionAnswer.alternativeID())
           .questionId(questionAnswer.questionID())
-          .studentId(studentID)
+          .studentId(student.getId())
           .isCorrect(false)
           .build();
         answersCertifications.add(answersCertificationsEntity);
@@ -88,7 +87,7 @@ public class StudentCertificationAnswersUseCase {
 
     var certificationStudentEntity = CertificationStudentEntity.builder()
       .technology(dto.technology())
-      .studentId(studentID)
+      .student(student)
       .grade(correctAnswers.get())
       .build();
     var certificationStudentCreated = certificationStudentRepository.save(certificationStudentEntity);

@@ -5,7 +5,7 @@ import java.util.UUID;
 
 import org.hibernate.annotations.CreationTimestamp;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -43,7 +43,7 @@ public class AlternativesEntity {
 
   @ManyToOne
   @JoinColumn(name = "question_id", insertable = false, updatable = false)
-  @JsonIgnore
+  @JsonBackReference
   private QuestionEntity question;
 
 }

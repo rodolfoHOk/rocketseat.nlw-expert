@@ -41,6 +41,7 @@ public class CertificationStudentEntity {
   private int grade;
   
   @Column(name = "student_id")
+  @JsonBackReference
   private UUID studentId;
 
   @CreationTimestamp
@@ -49,7 +50,7 @@ public class CertificationStudentEntity {
 
   @ManyToOne()
   @JoinColumn(name = "student_id", insertable = false, updatable = false)
-  @JsonBackReference
+  @JsonManagedReference
   private StudentEntity student;
 
   @OneToMany(mappedBy = "certification", cascade = CascadeType.ALL)

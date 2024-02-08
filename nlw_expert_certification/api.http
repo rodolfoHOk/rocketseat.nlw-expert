@@ -32,3 +32,6 @@ Content-Type: application/json
     }
   ]
 }
+
+### Top 10 ranking
+GET http://localhost:8085/ranking
