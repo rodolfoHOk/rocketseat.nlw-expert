@@ -30,3 +30,17 @@
 - [Tailwind CSS installation guide](https://tailwindcss.com/docs/guides/vite#react)
 
 - [Radix UI](https://www.radix-ui.com/primitives)
+
+## Como Rodar
+
+### Requisitos
+
+- NodeJs ~20.11.0
+
+### Executar
+
+- entrar nesta pasta
+
+- npm install
+
+- npm run dev

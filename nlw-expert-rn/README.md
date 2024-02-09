@@ -43,3 +43,25 @@
 - [Zustand](https://zustand-demo.pmnd.rs/)
 
 - [Expo AsyncStorage](https://docs.expo.dev/versions/latest/sdk/async-storage/)
+
+## Como Rodar
+
+### Requisitos
+
+- NodeJs ~20.11.0
+
+- Android Studio com um dispositivo virtual criado
+
+- ou dispositivo físico Android com app Expo Go instalado
+
+### Executar
+
+- entrar nesta pasta
+
+- npm install
+
+- npx expo start
+
+- Se for dispositivo virtual digite "a" no terminal
+
+- Se dispositivo físico abrir o app Expo Go e escanear o QR Code

@@ -44,3 +44,21 @@
 - [Redis commands](https://redis.io/commands/)
 
 - [fastify-websocket](https://github.com/fastify/fastify-websocket)
+
+## Como Rodar
+
+### Requisitos
+
+- NodeJs ~20.11.0
+
+- Docker
+
+### Executar
+
+- entrar nesta pasta
+
+- docker compose up -d
+
+- npm install
+
+- npm run dev

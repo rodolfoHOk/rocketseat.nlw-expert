@@ -26,3 +26,21 @@
 - [Maven Repository](https://mvnrepository.com/)
 
 - [Project Share Spring initializr](https://start.spring.io/#!type=maven-project&language=java&platformVersion=3.2.2&packaging=jar&jvmVersion=21&groupId=com.rocketseat&artifactId=nlw_expert_certification&name=nlw_expert_certification&description=Projeto%20do%20NLW%20Expert%20Thilha%20Java&packageName=com.rocketseat.nlw_expert_certification&dependencies=web,devtools,lombok,data-jpa,postgresql)
+
+## Como Rodar
+
+### Requisitos
+
+- Java 21
+
+- Docker
+
+### Executar
+
+- entrar nesta pasta
+
+- docker compose up -d
+
+- ./mvnw package
+
+- java -jar target/nlw_expert_certification-1.0.0.jar

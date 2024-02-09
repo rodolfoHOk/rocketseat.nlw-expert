@@ -2,7 +2,6 @@ package com.rocketseat.nlw_expert_certification.modules.students.usecases;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.springframework.beans.factory.annotation.Autowired;
