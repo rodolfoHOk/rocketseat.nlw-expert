@@ -28,6 +28,19 @@
 - npx expo install expo-font @expo-google-fonts/inter
 - npx expo install @react-native-async-storage/async-storage
 
+## Imagens do projeto
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/nlw-expert-orders-01.png" alt="NLW Expert Orders 01" height="400"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/nlw-expert-orders-02.png" alt="NLW Expert Orders 02" height="400"/>
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/nlw-expert-orders-03.png" alt="NLW Expert Orders 03" height="400"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/nlw-expert-orders-04.png" alt="NLW Expert Orders 04" height="400"/>
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/nlw-expert-orders-05.png" alt="NLW Expert Orders 05" height="400"/>
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/nlw-expert-orders-06.png" alt="NLW Expert Orders 06" height="400"/>
+
+<img src="https://raw.githubusercontent.com/rodolfoHOk/portfolio-img/main/images/nlw-expert-orders-07.png" alt="NLW Expert Orders 07" height="400"/>
+
 ## Links
 
 - [Notion Guides](https://efficient-sloth-d85.notion.site/NLW-14-Expert-9e11ff472de64b08a5f9e277a20c3ecc)
